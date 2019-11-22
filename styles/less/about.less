@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+#wrapper {
+
+    .flex();
+    flex-wrap: wrap;
+    min-height: calc(100% - 65px);
+
+    .content-container {
+    
+        .flex();
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+        width: fit-content;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px black;
+
+        .profile-image {
+
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 50px;
+
+        }
+    
+    }
+
+}

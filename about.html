@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='scripts/index.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet" />
+    <title>Lendr - About</title>
+    <link rel='stylesheet' href='styles/css/core.css'>
+    <link rel='stylesheet' href='styles/css/about.css'>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id='root'>
+        <div id='mobile-nav-wrapper' onclick='toggleMenu();'>
+            <ul>
+                <li class='darker'><img src='rsc/Home-Button-White.png' />
+                    <p>Home</p>
+                </li>
+                <li class='lighter'><img src='rsc/search-icon-white.png' />
+                    <p>Browse</p>
+                </li>
+                <li class='darker'><img src='rsc/Trading-White.png' />
+                    <p>Lend</p>
+                </li>
+                <li class='lighter'><img src='rsc/login_button_white.png' />
+                    <p>Login</p>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <div id='width-manager'>
+                <img src='rsc/lendr-logo-inversed.png' alt='Lendr Logo'>
+                <div>
+                    <div class='hover-container'>
+                        <a href='index.html'>Home</a>
+                        <hr class='link-underline'>
+                    </div>
+                    <div class='hover-container'>
+                        <a href='browse.html'>Browse</a>
+                        <hr class='link-underline'>
+                    </div>
+                    <div class='hover-container'>
+                        <a href='lend.html'>Lend</a>
+                        <hr class='link-underline'>
+                    </div>
+                    <div class='hover-container'>
+                        <a href='https://frontend.smcguire1826.now.sh/'>Login</a>
+                        <hr class='link-underline'>
+                    </div>
+                </div>
+            </div>
+            <div id='mobile-bar'>
+                <img id='mobile-menu-toggle' src='rsc/menu-icon-white.png' />
+                <div>
+                    <img src='rsc/lendr-logo-inversed.png' alt='Lendr Logo'>
+                </div>
+            </div>
+        </nav>
+        <div id="wrapper">
+            <div class='content-container' onclick='redirect("https://github.com/jayfenam");'>
+                <img class='profile-image' src='https://avatars1.githubusercontent.com/u/28907470?s=460&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Jonathan Ferrer</h1>
+                    <h2>Project Lead</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/Neytoro");'>
+                <img class='profile-image' src='https://avatars3.githubusercontent.com/u/31908898?s=460&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Alston Garrett</h1>
+                    <h2>Web UI</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/jagins");'>
+                <img class='profile-image' src='https://avatars2.githubusercontent.com/u/56888002?s=88&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Joshua Agins</h1>
+                    <h2>Web UI</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/spencer-mcguire");'>
+                <img class='profile-image' src='https://avatars3.githubusercontent.com/u/55768894?s=460&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Spencer McGuire</h1>
+                    <h2>Frontend</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/JoshHill15");'>
+                <img class='profile-image' src='https://avatars1.githubusercontent.com/u/52182876?s=460&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Joshua Hill</h1>
+                    <h2>Frontend</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/AlbertoGalvan001");'>
+                <img class='profile-image' src='https://ca.slack-edge.com/T4JUEB3ME-UMQM1MY5V-974d72bb895c-48' />
+                <div class='content-subcontainer'>
+                    <h1>Alberto Galvan</h1>
+                    <h2>Frontend</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/05nelsonm");'>
+                <img class='profile-image' src='https://ca.slack-edge.com/T4JUEB3ME-ULZAE512Q-3635489f3c72-512' />
+                <div class='content-subcontainer'>
+                    <h1>Matt Nelson</h1>
+                    <h2>Backend</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/Isvvc");'>
+                <img class='profile-image' src='https://avatars0.githubusercontent.com/u/10291615?s=460&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Isaac Lyons</h1>
+                    <h2>iOS</h2>
+                </div>
+            </div>
+            <div class='content-container' onclick='redirect("https://github.com/RoastBeefKazenakis");'>
+                <img class='profile-image' src='https://avatars2.githubusercontent.com/u/53605757?s=460&v=4' />
+                <div class='content-subcontainer'>
+                    <h1>Thomas Sabino-Benowitz</h1>
+                    <h2>iOS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section id='social-links'>
+            <h1>Contact us</h1>
+            <hr>
+            <div>
+                <img id='facebook-img' src='rsc/facebook.png'
+                    onmouseover='changeImage("facebook-img", "rsc/facebook-hover.png");'
+                    onmouseout='changeImage("facebook-img", "rsc/facebook.png");' />
+                <img id='twitter-img' src='rsc/twitter.png'
+                    onmouseover='changeImage("twitter-img", "rsc/twitter-hover.png");'
+                    onmouseout='changeImage("twitter-img", "rsc/twitter.png");' />
+                <!-- <img id='instagram-img' src='rsc/instagram.png'
+          onmouseover='changeImage("instagram-img", "rsc/instagram-hover.png");'
+          onmouseout='changeImage("instagram-img", "rsc/instagram.png");' /> -->
+                <img id='youtube-img' src='rsc/youtube.png'
+                    onmouseover='changeImage("youtube-img", "rsc/youtube-hover.png");'
+                    onmouseout='changeImage("youtube-img", "rsc/youtube.png");' />
+            </div>
+        </section>
+        <section id='other-links'>
+            <a href='about.html'>About us</a>
+            <a href=''>How it works</a>
+            <a href=''>Privacy policy</a>
+            <a href=''>Terms and Conditions</a>
+        </section>
+        <img id='lambda-logo' src='rsc/lambda-logo.png' alt='Lambda Logo' />
+    </footer>
+</body>
+
+</html>
